@@ -8,7 +8,7 @@ exports.all = function (cb) {
             { $match: { deleted: false, id: { $gt: 0 } } }
             , {
                 $project: {
-                    id:1, name:1, reference:1, value:1,
+                    id:1, name:1, reference:1, value:1, on:1, off:1,
                     active:1,
                 }
             }
@@ -27,7 +27,7 @@ exports.one = function (objectId, cb) {
         , { $lookup: { from: 'user', localField: 'deleter', foreignField: 'id', as: 'deleter'} }
         , {
             $project: {
-                id:1, name:1, reference:1, value:1
+                id:1, name:1, reference:1, value:1, on:1, off:1
                 , active:1
                 , creator: { _id:1, id:1, firstname:1, lastname:1 }, created:1
                 , modifier: { _id:1, id:1, firstname:1, lastname:1 }, modified:1
@@ -50,7 +50,7 @@ exports.oneById = function (id, cb) {
         , { $lookup: { from: 'user', localField: 'deleter', foreignField: 'id', as: 'deleter'} }
         , {
             $project: {
-                id:1, name:1, reference:1, value:1
+                id:1, name:1, reference:1, value:1, on:1, off:1
                 , creator: { _id:1, id:1, firstname:1, lastname:1 }, created:1
                 , modifier: { _id:1, id:1, firstname:1, lastname:1 }, modified:1
                 , deleter: { _id:1, id:1, firstname:1, lastname:1 }, deleted:1

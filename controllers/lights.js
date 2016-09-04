@@ -194,7 +194,7 @@ router.put('/:token/:subsidiary', function (req, res, next) {
                                             if(error){ }else{
                                                 res.json({
                                                     success: true,
-                                                    message: config.messages.subsidiary.updatedSuccessfully,
+                                                    message: "Actualizado",
                                                     data: {}
                                                 });
                                             }

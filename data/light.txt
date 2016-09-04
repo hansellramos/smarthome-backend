@@ -1,2 +1,2 @@
-{"id":1,"name":"Luz Cocina","reference":"l1", "value":"0", "created":0, "creation":0, "modified":0, "modifier":0, "deleted":false, "deleter":false}
-{"id":2,"name":"Luz Comedor","reference":"l2", "value":"0", "created":0, "creation":0, "modified":0, "modifier":0, "deleted":false, "deleter":false}
+{"id":1,"name":"Luz Cocina","reference":"la", "value":false, "on":"A", "off":"a", "created":0, "creation":0, "modified":0, "modifier":0, "deleted":false, "deleter":false}
+{"id":2,"name":"Luz Comedor","reference":"lb", "value":false, "on":"B", "off":"b", "created":0, "creation":0, "modified":0, "modifier":0, "deleted":false, "deleter":false}
