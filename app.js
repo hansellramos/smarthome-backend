@@ -10,6 +10,7 @@ var auth = require('./controllers/auth');
 var users = require('./controllers/users');
 var profiles = require('./controllers/profiles');
 var permissions = require('./controllers/permissions');
+var lights = require('./controllers/lights');
 
 var app = express();
 
@@ -36,6 +37,7 @@ app.use('/auth', auth);
 app.use('/users', users);
 app.use('/profiles', profiles);
 app.use('/permissions', permissions);
+app.use('/lights', lights);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

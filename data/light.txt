@@ -1,0 +1,2 @@
+{"id":1,"name":"Luz Cocina","reference":"l1", "value":"0", "created":0, "creation":0, "modified":0, "modifier":0, "deleted":0, "deleter":0}
+{"id":2,"name":"Luz Comedor","reference":"l2", "value":"0", "created":0, "creation":0, "modified":0, "modifier":0, "deleted":0, "deleter":0}
